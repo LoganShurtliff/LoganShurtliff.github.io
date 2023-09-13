@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title> Ruben's Rubik's Cubes :: Orders </title>
+    <meta charset = "utf-8" >
+    <link rel= "stylesheet" href = "cubes.css"> 
+</head>
+
+<body>
+<div id = "wrapper">
+    <header> 
+        <h1> Ruben's Rubik's Cubes </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href = "index.html" > Home </a></li>
+            <li><a href = "table.html" > Products </a></li>
+            <li><a href = "form.html" > Orders </a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2> Order Form </h2>
+        <p> Required Items are noted with an * Asterisk </p>
+        <form method="post" action = "https://webdevbasics.net/scripts/demo.php">
+            <fieldset>
+                <legend> Contact Information </legend>
+                <label for = "FName"> *First Name: </label>
+                <input type = "text" name = "FName" id = "FName" required = "required" >
+                
+                <label for = "LName"> *Last Name: </label>
+                <input type = "text" name = "LName" id = "LName" required = "required">
+                
+                <label for = "Email"> *Email Address: </label>
+                <input type = "email" name = "Email" id = "Email" required = "required">
+                
+                <label for = "Product"> *Product: </label>
+                <select name = "Product" id = "Product" required = "required" >
+                    <option value = ""> Select Product </option>
+                    <option value = "001"> 3x3 Rubik's Cube </option>
+                    <option value = "002"> 4x4 Rubik's Cube </option>
+                    <option value = "003"> MegaMinx Puzzle </option>
+                </select> 
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Shipping Information </legend>
+                <label for = "ALine1"> *Address Line 1: </label>
+                <input type = "text" name = "ALine1" id = "ALine1" required = "required">
+
+                <label for = "ALine2"> Address Line 2: </label>
+                <input type = "text" name = "ALine2" id = "ALine2">
+
+                <label for = "City"> *City: </label>
+                <input type = "text" name = "City" id = "City" required = "required">
+
+                <label for = "State"> *State: </label>
+                <input type = "text" name = "State" id = "State" required = "required">
+
+                <label for = "Zip"> *ZipCode: </label>
+                <input type = "text" name = "Zip" id = "Zip" required = "required">
+            </fieldset>
+
+            <input type = "submit" name = "submit" id = "sumbit" value = "Submit">
+        </form>
+    </main>
+
+    <footer>
+        <small><i>
+            Copyright &copy; 2023 RubenCubes <br>
+            <a href = "mailto:rubencubes@fakemail.org">rubencubes@fakemail.org</a>
+        </i></small>
+    </footer>
+</div>
+</body>
+
+</html>
